@@ -90,7 +90,7 @@ Router.post("/cadastro/usuario/salvar", (req, res) => {
 });
 
 Router.post("/login/executar", (req, res) => {
-  if (req.body.nome === "victor" && req.body.senha === "123456") {
+  if (req.body.nome === "luis" && req.body.senha === "123456") {
     res.render("/lista/usuario", { mensagem: "cadsatrado" });
   } else {
     res.render("login/?fail=true");
